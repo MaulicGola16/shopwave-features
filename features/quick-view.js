@@ -1,3 +1,4 @@
+// Quick View plugin initialized for ShopWave storefront
 // Feature: quick view — click a product image to open a details popup.
 ShopWave.use(function (sw) {
   sw.addStyles(
