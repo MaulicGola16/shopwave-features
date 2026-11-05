@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopWave Features</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand">🛍️ Shop<span>Wave</span></div>
+      <div id="header-actions" class="header-actions"></div>
+    </header>
+
+    <main class="container">
+      <div id="toolbar" class="toolbar"></div>
+      <p id="result-count" class="muted"></p>
+      <section id="grid" class="grid"></section>
+    </main>
+
+    <!-- Core app -->
+    <script src="app.js"></script>
+
+    <!-- Feature modules: one file per feature, so branches never touch the same file.
+         On main these files are empty stubs; each feature branch fills in exactly one. -->
+    <script src="features/search.js"></script>
+    <script src="features/category-filter.js"></script>
+    <script src="features/sort.js"></script>
+    <script src="features/wishlist.js"></script>
+    <script src="features/cart.js"></script>
+    <script src="features/dark-mode.js"></script>
+    <script src="features/quick-view.js"></script>
+
+    <script>ShopWave.start();</script>
+  </body>
+</html>
